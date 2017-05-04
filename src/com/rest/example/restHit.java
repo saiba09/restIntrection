@@ -98,6 +98,6 @@ public class restHit {
 		  p.apply(TextIO.Read.from("Patient.json")).apply(ParDo.of(MUTATION_TRANSFORM))
 			 //.apply(TextIO.Write.to("gs://mihin-data/temp-test.txt"));
 			 .apply(TextIO.Write.to("gs:///mihin-data/temp123.txt"));
-		  
+		  p.run();
 		}
 }
